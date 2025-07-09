@@ -882,122 +882,173 @@
       </section>
 
       <!-- Contato Section -->
-      <section id="contato" class="py-20 md:py-32 bg-gray-800">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-16 reveal">
-            <h2 class="section-title">
-              Vamos Iniciar <span class="text-amber-400">seu Projeto?</span>
-            </h2>
-            <p class="mt-4 max-w-2xl mx-auto text-lg">
-              Entre em contato conosco. Nossa equipe está pronta para atender
-              você.
-            </p>
-          </div>
-          <div
-            class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-gray-900 p-8 md:p-12 rounded-lg shadow-2xl reveal"
+<section id="contato" class="py-20 md:py-32 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <h2 class="section-title">
+        Vamos Iniciar <span class="text-amber-400">seu Projeto?</span>
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-lg">
+        Entre em contato conosco. Nossa equipe está pronta para atender
+        você.
+      </p>
+    </div>
+
+    <div
+      class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 bg-gray-900 p-8 md:p-12 rounded-lg shadow-2xl reveal"
+    >
+      <form
+        action="https://formspree.io/f/SEU_LINK_AQUI"
+        method="POST"
+        class="w-full md:w-1/2 min-w-0"
+      >
+        <div class="mb-5">
+          <label
+            for="name"
+            class="block mb-2 text-sm font-medium text-gray-300"
+            >Seu nome</label
           >
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/SEU_LINK_AQUI" method="POST">
-              <div class="mb-5">
-                <label
-                  for="name"
-                  class="block mb-2 text-sm font-medium text-gray-300"
-                  >Seu nome</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
-                  placeholder="Nome Completo"
-                  required
-                />
-              </div>
-              <div class="mb-5">
-                <label
-                  for="email"
-                  class="block mb-2 text-sm font-medium text-gray-300"
-                  >Seu email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
-                  placeholder="seu.email@exemplo.com"
-                  required
-                />
-              </div>
-              <div class="mb-5">
-                <label
-                  for="message"
-                  class="block mb-2 text-sm font-medium text-gray-300"
-                  >Sua mensagem</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
-                  placeholder="Descreva o que você precisa..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-amber-400 transition-all duration-300 transform hover:scale-105"
-              >
-                Enviar Mensagem
-              </button>
-            </form>
-            <!-- Contact Info -->
-            
-                <div class="flex flex-col justify-center space-y-6 text-gray-300">
-                        <div>
-                            <h3 class="font-bold text-white text-lg mb-2">Endereço</h3>
-                            <p>Rua Antônio Bernardes da Silva, 39<br>Uberaba, MG</p>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-white text-lg mb-2">Telefone & WhatsApp</h3>
-                            <a href="https://api.whatsapp.com/send?phone=5534988107763" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                </svg>
-                                <span>(34) 98810-7763</span>
-                            </a>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-white text-lg mb-2">Email</h3>
-                             <a href="mailto:altonivelmoveisplanejados@gmail.com" class="flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                </svg>
-                                <span>altonivelmoveisplanejados@gmail.com</span>
-                            </a>
-                        </div>
-                         <div>
-                            <h3 class="font-bold text-white text-lg mb-2">Redes Sociais</h3>
-                            <div class="flex space-x-6">
-                               <a href="https://www.instagram.com/altonivelmoveisplanejados/" class="flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.52c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 12.315 2zm0 1.623c-2.403 0-2.72.01-3.667.058-1.002.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.855-.344 1.857-.048.947-.058 1.264-.058 3.667s.01 2.72.058 3.667c.045 1.002.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.855.3 1.857.344.947.048 1.264.058 3.667.058s2.72-.01 3.667-.058c1.002-.045 1.504-.207 1.857-.344.467-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.855.344-1.857.048-.947.058-1.264.058-3.667s-.01-2.72-.058-3.667c-.045-1.002-.207-1.504-.344-1.857a3.27 3.27 0 00-.748-1.15 3.27 3.27 0 00-1.15-.748c-.353-.137-.855-.3-1.857-.344-.947-.048-1.264-.058-3.667-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.623a3.512 3.512 0 100 7.024 3.512 3.512 0 000-7.024zM16.536 6.115a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-                                    </svg>
-                                   <span>Instagram</span>
-                               </a>
-                               <a href="https://www.facebook.com/Altonivelmoveisplanejados/" class="flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.046C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                                    </svg>
-                                   <span>Facebook</span>
-                               </a>
-                            </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
+            placeholder="Nome Completo"
+            required
+          />
         </div>
-      </section>
+        <div class="mb-5">
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-300"
+            >Seu email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
+            placeholder="seu.email@exemplo.com"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="message"
+            class="block mb-2 text-sm font-medium text-gray-300"
+            >Sua mensagem</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
+            placeholder="Descreva o que você precisa..."
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-amber-400 transition-all duration-300 transform hover:scale-105"
+        >
+          Enviar Mensagem
+        </button>
+      </form>
+
+      <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 text-gray-300">
+  <div>
+    <h3 class="font-bold text-white text-base md:text-lg mb-2">Endereço</h3>
+    <p class="text-sm md:text-base">
+      Rua Antônio Bernardes da Silva, 39<br />Uberaba, MG
+    </p>
+  </div>
+  <div>
+    <h3 class="font-bold text-white text-base md:text-lg mb-2">
+      Telefone & WhatsApp
+    </h3>
+    <a
+      href="https://api.whatsapp.com/send?phone=5534988107763"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center space-x-2 hover:text-amber-400 transition-colors text-sm md:text-base"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+        />
+      </svg>
+      <span>(34) 98810-7763</span>
+    </a>
+  </div>
+  <div>
+    <h3 class="font-bold text-white text-base md:text-lg mb-2">Email</h3>
+    <a
+      href="mailto:altonivelmoveisplanejados@gmail.com"
+      class="flex items-center space-x-2 hover:text-amber-400 transition-colors text-sm md:text-base"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+        />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>
+      <span class="break-all">altonivelmoveisplanejados@gmail.com</span>
+    </a>
+  </div>
+  <div>
+    <h3 class="font-bold text-white text-base md:text-lg mb-2">
+      Redes Sociais
+    </h3>
+    <div class="flex space-x-6">
+      <a
+        href="https://www.instagram.com/altonivelmoveisplanejados/"
+        class="flex items-center space-x-2 hover:text-amber-400 transition-colors text-sm md:text-base"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.52c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 12.315 2zm0 1.623c-2.403 0-2.72.01-3.667.058-1.002.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.855-.344 1.857-.048.947-.058 1.264-.058 3.667s.01 2.72.058 3.667c.045 1.002.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.855.3 1.857.344.947.048 1.264.058 3.667.058s2.72-.01 3.667-.058c1.002-.045 1.504-.207 1.857-.344.467-.182.8-.398-1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.855.344-1.857.048-.947.058-1.264-.058-3.667s-.01-2.72-.058-3.667c-.045-1.002-.207-1.504-.344-1.857a3.27 3.27 0 00-.748-1.15 3.27 3.27 0 00-1.15-.748c-.353-.137-.855-.3-1.857-.344-.947-.048-1.264-.058-3.667-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.623a3.512 3.512 0 100 7.024 3.512 3.512 0 000-7.024zM16.536 6.115a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a
+        href="https://www.facebook.com/Altonivelmoveisplanejados/"
+        class="flex items-center space-x-2 hover:text-amber-400 transition-colors text-sm md:text-base"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.046C18.343 21.128 22 16.991 22 12z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
     </main>
 
     <!-- Footer -->

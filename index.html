@@ -17,6 +17,52 @@
     />
 
     <!-- Alpine.js for interactivity -->
+    <script>
+      function siteData() {
+        return {
+          isMenuOpen: false,
+          isModalOpen: false,
+          modalImage: "",
+          modalTitle: "",
+          galleryImages: [
+            {
+              src: "https://images.unsplash.com/photo-1588854337236-6889d631f3e7?q=80&w=2070&auto=format&fit=crop",
+              title: "Cozinha Gourmet Integrada",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2070&auto=format&fit=crop",
+              title: "Sala de Estar Aconchegante",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1974&auto=format&fit=crop",
+              title: "Dormitório Moderno",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1595526114035-0d45ed16433d?q=80&w=2070&auto=format&fit=crop",
+              title: "Home Office Funcional",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2070&auto=format&fit=crop",
+              title: "Área de Lazer Externa",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop",
+              title: "Banheiro Sofisticado",
+            },
+          ],
+          openModal(image) {
+            this.isModalOpen = true;
+            this.modalImage = image.src;
+            this.modalTitle = image.title;
+            document.body.style.overflow = "hidden";
+          },
+          closeModal() {
+            this.isModalOpen = false;
+            document.body.style.overflow = "auto";
+          },
+        };
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
@@ -87,33 +133,7 @@
       }
     </style>
   </head>
-  <body
-    x-data="{ 
-    isMenuOpen: false,
-    isModalOpen: false, 
-    modalImage: '', 
-    modalTitle: '',
-    galleryImages: [
-        { src: 'https://images.unsplash.com/photo-1588854337236-6889d631f3e7?q=80&w=2070&auto=format&fit=crop', title: 'Cozinha Gourmet Integrada' },
-        { src: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2070&auto=format&fit=crop', title: 'Sala de Estar Aconchegante' },
-        { src: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1974&auto=format&fit=crop', title: 'Dormitório Moderno' },
-        { src: 'https://images.unsplash.com/photo-1595526114035-0d45ed16433d?q=80&w=2070&auto=format&fit=crop', title: 'Home Office Funcional' },
-        { src: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2070&auto=format&fit=crop', title: 'Área de Lazer Externa' },
-        { src: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop', title: 'Banheiro Sofisticado' }
-    ],
-    openModal(image) {
-        this.isModalOpen = true;
-        this.modalImage = image.src;
-        this.modalTitle = image.title;
-        document.body.style.overflow = 'hidden';
-    },
-    closeModal() {
-        this.isModalOpen = false;
-        document.body.style.overflow = 'auto';
-    }
-}"
-    @keydown.escape.window="closeModal()"
-  >
+  <body x-data="siteData()" @keydown.escape.window="closeModal()">
     <!-- Header -->
     <header
       x-data="{ atTop: true }"
@@ -129,7 +149,7 @@
         >
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8">
+        <nav class="hidden md:flex flex-wrap items-center space-x-6">
           <a
             href="#sobre"
             class="text-gray-300 hover:text-amber-400 transition-colors"
@@ -722,16 +742,18 @@
             class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-gray-900 p-8 md:p-12 rounded-lg shadow-2xl reveal"
           >
             <!-- Contact Form -->
-            <form action="#" method="POST">
+            <form action="https://formspree.io/f/SEU_LINK_AQUI" method="POST">
               <div class="mb-5">
                 <label
                   for="name"
                   class="block mb-2 text-sm font-medium text-gray-300"
                   >Seu nome</label
                 >
+                <!-- O atributo 'name' é importante para o Formspree identificar os campos -->
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
                   placeholder="Nome Completo"
                   required
@@ -746,6 +768,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
                   placeholder="seu.email@exemplo.com"
                   required
@@ -759,6 +782,7 @@
                 >
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
                   class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-2.5"
                   placeholder="Descreva o que você precisa..."
